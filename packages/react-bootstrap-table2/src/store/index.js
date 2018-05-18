@@ -27,6 +27,7 @@ export default class Store {
   }
 
   sortBy({ sortFunc }) {
+    if(sortFunc) return;
     this.data = sort(this)(sortFunc);
   }
 
